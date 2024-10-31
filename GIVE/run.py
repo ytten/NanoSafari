@@ -1,7 +1,6 @@
 from info_extraction_final_grouped import GIVE
 from attr_dict import my_attr_dict
 from openai import OpenAI
-import os
 from options import parse_args
 
 def main():
