@@ -1,0 +1,14 @@
+temperature: 0.0
+parsing_agent_model: "gpt-4o-mini-2024-07-18"
+searching_agent_model: "gpt-4o-mini-2024-07-18"
+summarization_agent_model: "gpt-4o-mini-2024-07-18"
+sqlite_path: 'np_sqlite/np_drug_delivery.db'
+work_dir: "./"
+mysql_address: ""
+mysql_port:  3306
+mysql_username: ""
+mysql_password: ""
+mysql_db_name: ""
+vectorDB_path: "np_vector"
+vectorDB_collection_name: ""
+thread_num: 5
