@@ -1,0 +1,6 @@
+openai_api_key: "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"
+input_path: "./"
+temperature: 0.0
+model_name: "gpt-4o-mini"
+output_path: "./output"
+thread_num: 1
