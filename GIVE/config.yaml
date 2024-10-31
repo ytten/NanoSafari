@@ -1,6 +1,7 @@
-openai_api_key: "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"
-input_path: "./"
-temperature: 0.0
+openai_api_key: "" # Please enter your openai api key
+input_path: "./input_csv_files" # Please enter your csv file input path
+temperature: 0.0 # Temperature of the LLM 
 model_name: "gpt-4o-mini"
-output_path: "./output"
-thread_num: 1
+output_path: "./output" # Please enter your json file out path
+thread_num: 1 # Please specify how many workers to perform the extraction task
+max_retry: 3 # Please specify maximum iteration during extraction 

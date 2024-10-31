@@ -10,17 +10,17 @@ import textwrap
 from options import parse_args
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
-MAX_RETRY = 3 
+
 
 
 class GIVE:
-    def __init__(self, client: OpenAI, attr_dict: dict[str, list[str]],temperature,prompt_dict = my_prompt_dict):
+    def __init__(self, client: OpenAI, attr_dict: dict[str, list[str]], temperature, max_retry, prompt_dict = my_prompt_dict):
 
         self.client = client
         self.attr_dict = attr_dict
         self.prompt_dict = prompt_dict
         self.temperature = temperature
-
+        self.max_retry = max_retry
     def process_csv(self, csv_path: str) -> list[str]:
         """
         Processes the csv file into a list of text.
@@ -206,7 +206,7 @@ class GIVE:
             retry = 0 
             # iterative validation 
             history = []
-            while retry < MAX_RETRY:
+            while retry < self.max_retry:
                 answer_prompt = self.generate_retrieve_answer_prompt(text_list, group)
                 paragraph_prompt = self.generate_retrieve_paragraph_prompt(text_list, group)            
                 answers = self.chat_json(answer_prompt, model=model)
@@ -263,6 +263,6 @@ class GIVE:
 if __name__ == '__main__':
     args = parse_args()
     chat_client = OpenAI(api_key=args.openai_api_key)
-    extractor = GIVE(client=chat_client, attr_dict=my_attr_dict, temperature = args.temperature)
+    extractor = GIVE(client=chat_client, attr_dict=my_attr_dict, temperature = args.temperature, max_retry=args.max_try)
     extractor.extract_info_from_directory(args.input_path, args.model, args.thread_num, args.output_path)
 
