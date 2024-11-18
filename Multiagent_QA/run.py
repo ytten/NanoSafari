@@ -9,7 +9,7 @@ from options import parse_args
 def init(args):
 
     # openai_client = OpenAI(api_key=args.openai_api_key)
-    openai_client = OpenAI()
+    openai_client = OpenAI(api_key=args.openai_api_key)
     qdrant_client = QdrantClient(path=args.vectorDB_path)
 
     db = Database(

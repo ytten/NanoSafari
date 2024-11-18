@@ -1,6 +1,6 @@
 {
     "nanoparticle_formulation": "J-1-8Br-cAMP hydrogel",
-    "nanoparticle_type": "hydrogel",
+    "nanoparticle_type": "antimicrobial peptide",
     "lipid_cholesterol_ratio": "None",
     "particle_size_mean_nm": "None",
     "particle_size_std_nm": "None",
@@ -11,7 +11,7 @@
     "peg_type": "None",
     "disease": "diabetic wounds",
     "intended_targeted_site_of_the_nanoparticle_drug": "wound tissue",
-    "payloads": "Jelleine-1 (J-1) and 8-Bromoadenosine-3', 5'-cyclic monophosphate (8Br-cAMP)",
+    "payloads": "Jelleine-1, 8-Bromoadenosine-3', 5'-cyclic monophosphate",
     "drug_molecular_weight": "953.57 Da",
     "toxicity": "Low",
     "gene_length": "None",
@@ -20,7 +20,7 @@
     "half_life": "None",
     "dose_frequencies": "None",
     "drug_blood_concentration": "None",
-    "animal_model": "MRSA infected diabetic wounds in rats",
+    "animal_model": "MRSA infected diabetic wound model in rats",
     "animal_species": "Kunming mice and Sprague-Dawley (SD) rats",
     "animal_age": "18-22 g for mice and 180-200 g for rats",
     "animal_sex": "male",
@@ -29,6 +29,6 @@
     "clinical_trial_with_human_subject": "None",
     "clinical_trial_side_effect": "None",
     "drug_stability_in_vivo_stability": "True",
-    "storage_condition": "Not specified",
+    "storage_condition": "The hydrogel was stored at 37 \u00b0C in a carbon dioxide cell incubator.",
     "biodegradability": "True"
 }

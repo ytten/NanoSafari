@@ -1,0 +1,6 @@
+openai==1.54.4
+scikit-learn
+pyyaml==6.0.2
+qdrant_client==1.12.1
+pandas==2.2.3
+SQLAlchemy==2.0.36

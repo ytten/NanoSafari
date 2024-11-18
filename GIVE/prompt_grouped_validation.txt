@@ -1,0 +1,24 @@
+
+        ### Given article paragraphs
+        The B-ultrasonic instrument (Voluson E10, GE, USA) was used to monitor the in vivo degradation of the hydrogel in the present study. The hydrogel was injected into the subcutaneous tissue of the mice first. Then the size of the hydrogel in the subcutaneous tissue was determined and recorded by the B-ultrasonic instrument at an indicated time interval till the hydrogel could not be detected. Finally, the skin was collected and fixed with the 4% for-malin solution for haematoxylin and eosin (H&E) staining and histological examination.
+One of the advantages of hydrogel dressings is that they could provide a moist environment for wound healing. However, the moist environment was conducive to bacteria invading the wound surface and causing infection, which would trigger severe inflammation response and was not conducive to wound healing [ 16 , 57 ] .
+Bacterial infection and local growth factor deficiency are two of the major causes of the nonunion of diabetic wounds. Antimicrobial peptides (AMPs) are believed to be alternatives to antibiotics against drug-resistant bacterial infections. 8-Bromoadenosine-3', 5'-cyclic monophosphate (8Br-cAMP) can promote cells to secrete growth factors and accelerate cell proliferation. In the present study, we constructed a hydrogel with antimicrobial peptide Jelleine-1 (J-1) and 8Br-cAMP without any other gelators or chemical crosslinking agents. The hydrogel was proved to promote the secretion of transforming growth factorβ (TGF-β) and vascular endothelial growth factor-A (VEGFA) in vitro and in vivo . Notably, it exhibited potent potential for wound healing in methicillin-resistant Staphylococcus aureus ( MRSA ) infected diabetic wounds. This would be attributed to the retention of AMPs and 8Br-cAMP on the wound site by the hydrogel system. In addition, the hydrogel also showed good biodegradability, proper stability, and good biocompatibility. This study would shed light on the development of carrier-free and multifunctional hydrogel for wound healing.
+
+        ### Instruction
+        Given article, answer the questions of the following group.
+        ### Group: Storage
+
+        ##### properties: drug_stability_in_vivo_stability
+ ##### questions: Is the drug stable according to the text? Answer with True or False only.
+
+##### properties: storage_condition
+ ##### questions: What is the storage condition of the nanoparticle according to the text? Answer with the storage condition only.
+
+##### properties: biodegradability
+ ##### questions: What is the biodegradability of the nanoparticle according to the text? Answer with True or False only.
+
+
+        ### Format
+        Json key should be corresponding property, Json value should be corresponding answer.
+
+        if the answer is not found, answer None

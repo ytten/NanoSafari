@@ -1,0 +1,12 @@
+[2024-11-18 10:50:05,593 INFO] input: How to design a nanoparticle that releases the drug in low pH environment?
+[2024-11-18 10:50:05,594 INFO] question: How to design a nanoparticle that releases the drug in low pH environment?
+[2024-11-18 10:50:07,745 INFO] parsed_query: {'0': {'question': 'How to design a nanoparticle that releases the drug in low pH environment?', 'conditions': [], 'target_attributes': [{'attribute': 'nanoparticle_type', 'data_type': 'text', 'desired_value': 'responsive'}, {'attribute': 'payloads', 'data_type': 'text', 'desired_value': 'drug'}, {'attribute': 'surface_modification', 'data_type': 'text', 'desired_value': 'pH-sensitive'}]}}
+[2024-11-18 10:50:07,747 INFO] parsed_sub_query: {'question': 'How to design a nanoparticle that releases the drug in low pH environment?', 'conditions': [], 'target_attributes': [{'attribute': 'nanoparticle_type', 'data_type': 'text', 'desired_value': 'responsive'}, {'attribute': 'payloads', 'data_type': 'text', 'desired_value': 'drug'}, {'attribute': 'surface_modification', 'data_type': 'text', 'desired_value': 'pH-sensitive'}]}
+[2024-11-18 10:50:09,244 INFO] Function triggered
+[2024-11-18 10:50:09,244 INFO] Before modification: SELECT doi, article_title, summary, avg_times_cited, nanoparticle_type, payloads, surface_modification FROM nanoparticles WHERE nanoparticle_type LIKE '%responsive%' AND payloads LIKE '%drug%' AND surface_modification LIKE '%pH-sensitive%' ORDER BY avg_times_cited DESC;
+[2024-11-18 10:50:09,247 INFO] After modification: SELECT doi, article_title, summary, avg_times_cited, nanoparticle_type, payloads, surface_modification FROM nanoparticles WHERE nanoparticle_type is not null AND payloads is not null AND surface_modification is not null AND avg_times_cited is not null ORDER BY avg_times_cited DESC;
+[2024-11-18 10:50:09,247 INFO] Attributes to post-process: []
+[2024-11-18 10:50:09,254 INFO] mysql retrieved data length: 100
+[2024-11-18 10:50:09,254 INFO] parsed_query question: How to design a nanoparticle that releases the drug in low pH environment?
+[2024-11-18 10:50:09,902 INFO] vectordb retrieved data length: 100
+[2024-11-18 10:50:09,902 INFO] doi length: 100
